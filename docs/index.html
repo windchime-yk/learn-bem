@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">BEMについて</h1>
+  </header>
+
+  <main class="main">
+    <section>
+      <h2>BEMとは</h2>
+      <blockquote class="blockquote" cite="https://app.codegrid.net/entry/bem-basic-1">
+        <p class="blockquote__text">BEMとは、Block、Element、Modifierの略語です。Webサイトのコンポーネント化のためのフロントエンド設計方法のひとつで、厳格なclass名の命名ルールが特徴的な手法です。</p>
+        <cite class="blockquote__source"><a href="https://app.codegrid.net/entry/bem-basic-1">BEMによるフロントエンドの設計 第1回 基本概念とルール - CodeGrid</a></cite>
+      </blockquote>
+
+      <pre>
+        <code>
+          .block__element_modifier {
+            /* do anything */
+          }
+        </code>
+      </pre>
+
+      <section>
+        <h3>MindBEMdingとは</h3>
+        <pre>
+          <code>
+            .block__element--modifier {
+              /* do anything */
+            }
+          </code>
+        </pre>
+      </section>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

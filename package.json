@@ -1,0 +1,13 @@
+{
+  "name": "learn-bem",
+  "private": true,
+  "scripts": {
+    "build": "cpx src/index.html dist/ && node-sass src/scss/main.scss dist/css/main.css --output-style compressed"
+  },
+  "repository": "git@github.com:windchime-yk/learn-bem.git",
+  "license": "MIT",
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "node-sass": "^4.13.0"
+  }
+}

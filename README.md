@@ -1,3 +1,3 @@
-# learn-bem
-BEM記法についてまとめてみたページ。
-ソースを見るとBEM記法で書かれてる。
+# Learn BEM
+CSS設計手法のBEMについて書いたページ。  
+このページのSCSSは、[FLOCSS](https://github.com/hiloki/flocss)（OOCSSやSMACSS、BEM、SuitCSSのコンセプトを取り入れたCSS設計手法）で構成されている。

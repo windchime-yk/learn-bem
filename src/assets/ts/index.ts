@@ -1,26 +1,12 @@
-import Prism from 'prismjs'
-import 'prismjs/themes/prism-tomorrow.css'
+import { prism, indexAutoGen, smoothScroll } from './modules/ui/'
+import type { HTMLElementEvent } from './interface/'
 
-/**
- * シンタックスハイライト
- */
-Prism.highlightAll()
-
-/**
- * Indexの自動生成
- */
-const navList = document.querySelector('.l-nav__list')
-const contents = document.querySelectorAll('.p-contents')
-
-contents.forEach((content) => {
-  const contentId = content.getAttribute('id')
-  const contentTitle = content.querySelector('.p-contents__head').textContent
-  navList.insertAdjacentHTML(
-    'beforeend',
-    `
-      <li class="l-nav__item">
-        <a href="#${contentId}" class="l-nav__item-link">${contentTitle}</a>
-      </li>
-    `
-  )
+prism()
+indexAutoGen()
+document.addEventListener('click', (e: HTMLElementEvent<HTMLAnchorElement>) => {
+  const target = e.target
+  if (!target.classList.contains('js-smooth-scroll')) return
+  e.preventDefault()
+  const targetId = target.hash
+  smoothScroll(targetId)
 })
